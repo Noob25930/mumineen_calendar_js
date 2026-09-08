@@ -42,3 +42,5 @@ jobs:
             git commit -m "Generate Dawoodi Bohra iCalendar feeds"
             git push
           fi
+
+# Calendar feeds are generated from the repository's Hijri conversion and Miqaat data.
