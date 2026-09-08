@@ -212,3 +212,9 @@ var HijriDate = (function () {
 
   return hijriDate;
 })();
+
+// Allow the existing browser calendar implementation to be reused by the
+// dependency-free Node.js iCalendar generator without changing browser behavior.
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = HijriDate;
+}
